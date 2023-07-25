@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
                         <ul>
                             <li>Hours in space: ${json[i].hoursInSpace}</li>
                             <li id="status_${json[i].id}">Active: ${json[i].active}</li>
-                            <li>Skills: ${json[i].skills}</li>
+                            <li>Skills: ${json[i].skills.join(", ")}</li>
                         </ul>
                     </div>
                     <img class="avatar" src="${json[i].picture}"/>
