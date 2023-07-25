@@ -26,6 +26,8 @@ window.addEventListener('load', () => {
                 `;
                 if (json[i].active === true) {
                     document.getElementById(`status_${json[i].id}`).style.color = "green";
+                } else{
+                    document.getElementById(`status_${json[i].id}`).style.color = "red"
                 }
             }
             
